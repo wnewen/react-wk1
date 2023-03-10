@@ -1,7 +1,15 @@
+import ImageItem from "./ImageItem"
+import images from "../json/images.json"
+
 function ImageList() {
     return (
-        <div className="container">
-        <h1 className="text-center">IMAGES</h1>
+        <div className="row">
+            {
+                images.map(image => (
+                    <ImageItem key = {image.id} image = {image} />
+                ))
+            }
+        {/* <h1 className="text-center">IMAGES</h1>
         <hr className="divider--dark" />
         <div className="row">
           <div className="image mt-4 col-sm-6 col-lg-3">
@@ -52,7 +60,7 @@ function ImageList() {
             </a>
             <p className="image_title">Place 8</p>
           </div>   
-        </div>
+        </div> */}
       </div>
     )
 }
