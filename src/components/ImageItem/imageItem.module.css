@@ -1,0 +1,25 @@
+.image {
+    width: 14rem;
+    height: 14rem;
+    vertical-align: middle;
+}
+
+.imageLink {
+    display: block;
+}
+
+.imageStyle {
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+}
+
+.imageTitle {
+    color: #fff;
+    right: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}

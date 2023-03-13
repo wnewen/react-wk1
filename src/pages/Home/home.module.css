@@ -1,0 +1,29 @@
+.mainLayout {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 
+        'header'
+        'content'
+        'footer'
+    ;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
+}
+
+.layoutHeader {
+    grid-area: header;
+    padding: 0;
+    height: auto;
+    line-height: 1.6;
+}
+
+.layoutFooter {
+    grid-area: footer;
+    height: auto;
+    line-height: 1.6;
+}
+
+layoutContent {
+    grid-area: content;
+}
+

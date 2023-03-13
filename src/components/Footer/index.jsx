@@ -1,10 +1,12 @@
+import styles from './footer.module.css'
+
 function Footer() {
     return (
         <footer className="footer">
-            <div className="footer__above py-5">
+            <div className={styles.footerAbove}>
                 <div className="container">
-                    <div className="row my-3">
-                        <h5 className="footer__description col-lg-8">
+                    <div className={styles.row}>
+                        <h5 className={styles.footerDescription}>
                             臺北市和平東路二段134號，國立臺北教育大學 數位科技設計學系
                         </h5>
                         <ul className="footer__list col-lg-4">
@@ -16,9 +18,9 @@ function Footer() {
                 </div>
             </div>
 
-            <div className="footer__below">
+            <div className={styles.footerBelow}>
                 <div className="container">
-                    <h6>
+                    <h6 className={styles.h6}>
                         &copy; Copyright All rights reserved.
                     </h6>
                 </div>

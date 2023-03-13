@@ -1,0 +1,40 @@
+.header {
+    height: 40vh;
+    background-color: #00979c;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerAvatar {
+    width: 14rem;
+    height: 14rem;
+    vertical-align: middle;
+}
+
+.headerTitle {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    display: block;
+}
+
+.dividerLight {
+    border-color: #fff;
+    width: 250px;
+    border-top: solid 5px;
+    margin: 1rem 0;
+}
+
+.headerSlogan {
+    font-size: 1.75em;
+    text-transform: uppercase;
+    margin: 0;
+    display: block;
+}
+
