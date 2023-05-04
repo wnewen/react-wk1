@@ -1,15 +1,20 @@
-import { useState } from 'react'
 import 'antd/dist/reset.css'
 import './App.css'
 import Home from './pages/Home'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
+// import { feedProducts } from './api';
+// feedProducts();
+
+const queryClient = new QueryClient();
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <QueryClientProvider client={queryClient} >
+      <div className="App">
+        <Home />
+      </div>
+    </QueryClientProvider>
   )
 }
 
